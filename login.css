@@ -1,0 +1,208 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(img//login\ bg1.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; /* Ensure the container takes full height */
+  }
+  
+  .login-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 82vh; /* Set height to 50% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    text-align: center;
+    animation: fadeIn 0.2s ease-in-out;
+  }
+  
+  .login-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .login-box p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-group input:focus {
+    border-color: #6a11cb;
+    outline: none;
+  }
+  
+  .toggle-password {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+  }
+  
+  .toggle-password:hover {
+    color: #6a11cb;
+  }
+  
+  .checkbox {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox input {
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  .checkbox label {
+    margin: 0;
+    font-weight: normal;
+    color: #555;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+  }
+  
+  .or-divider {
+    text-align: center;
+    margin: 20px 0;
+    color: #777;
+  }
+  
+  .social-login button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .social-login button.google-login {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .social-login button.google-login:hover {
+    background: #c23321;
+  }
+  
+  .social-login button.facebook-login {
+    background: #3b5998;
+    color: white;
+  }
+  
+  .social-login button.facebook-login:hover {
+    background: #2d4373;
+  }
+  
+  .forgot-password {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .forgot-password a {
+    color: #6a11cb;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .forgot-password a:hover {
+    color: #2575fc;
+  }
+  
+  .signup-link {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .signup-link a {
+    color: #6a11cb;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .signup-link a:hover {
+    color: #2575fc;
+  }
+  
+  .error {
+    color: #ff6b6b;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .success {
+    color: #28a745;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

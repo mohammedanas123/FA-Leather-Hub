@@ -1,0 +1,348 @@
+/* Global Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navigation */
+nav {
+  background-color: #111;
+  color: white;
+  padding: 20px 50px;
+  text-align: center;
+}
+
+.navTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navBottom a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-right: 20px;
+  
+}
+/* Cart Container */
+.cartContainer {
+  padding: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cartTitle {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.cartWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Cart Item */
+.cartItem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.cartImageContainer {
+  width: 100px;
+  height: 100px;
+}
+
+.cartImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cartDetails {
+  flex: 1;
+}
+
+.cartItemTitle {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.cartItemDesc {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.cartItemControls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.cartItemButton {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.cartItemButton:hover {
+  background-color: #ddd;
+}
+
+.cartItemRemove {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.cartItemRemove:hover {
+  background-color: #ff1a1a;
+}
+
+.cartItemPrice {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Cart Summary */
+.cartSummary {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+}
+
+.summaryItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.summaryTitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.productButton {
+  width: 100%;
+  padding: 10px;
+  background-color: #000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.productButton:hover {
+  background-color: #333;
+}
+
+/* Payment Modal */
+.payment {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 50px;
+  display: none;
+  flex-direction: column;
+  box-shadow: 10px 10px 27px -3px rgba(0, 0, 0, 0.87);
+  z-index: 1000;
+}
+
+.payTitle {
+  font-size: 20px;
+  color: lightgray;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.payInput {
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid gray;
+  width: 100%;
+}
+
+.payInput::placeholder {
+  color: rgb(163, 163, 163);
+}
+
+.cardIcons {
+  display: flex;
+  margin: 10px 0;
+}
+
+.cardIcon {
+  margin-right: 10px;
+}
+
+.cardInfo {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.sm {
+  width: 30%;
+}
+
+.payButton {
+  height: 40px;
+  width: 100%;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.payButton:hover {
+  background-color: darkgreen;
+}
+
+.close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: gray;
+  color: white;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 50%;
+}
+
+.close:hover {
+  background-color: #ff4d4d;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  background-color: #111;
+  color: white;
+  padding: 20px 50px;
+}
+
+.footerLeft {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.fMenuTitle {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.fList {
+  padding: 0;
+  list-style: none;
+}
+
+.fListItem {
+  margin-bottom: 10px;
+  color: gray;
+  cursor: pointer;
+}
+
+.footerRight {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fInput {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.fButton {
+  padding: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.fIcons {
+  display: flex;
+}
+
+.fIcon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.copyright {
+  font-weight: 300;
+  font-size: 14px;
+  color: gray;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cartContainer {
+    padding: 20px;
+  }
+
+  .payment {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .cardInfo {
+    flex-direction: column;
+  }
+
+  .sm {
+    width: 100%;
+  }
+}
